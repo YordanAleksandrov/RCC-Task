@@ -1,0 +1,39 @@
+@import 'colors';
+
+body{
+
+	margin: 0;
+	padding: 0; 
+	background-color: $yellow_pages;
+
+}
+
+.container{
+
+	width: 50%;
+	margin:0 auto;
+
+}
+
+@media screen and (max-width: 996px) {
+
+    .container {
+
+        width: 80%;
+		margin:0 auto;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+	
+    .container {
+
+        width: 100%;
+
+    }
+
+}
+
+@import 'table';
+@import 'controls';

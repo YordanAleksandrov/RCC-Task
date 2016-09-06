@@ -1,0 +1,66 @@
+.controls_div{
+
+	padding: 10px;
+
+}
+
+
+.controls{
+
+	width: 60%;
+	margin: 0 auto;
+
+}
+
+input{
+
+	font-size: 1.2em;
+
+}
+
+.btn{
+
+	color: $black;
+	text-decoration: none;
+	border:1px solid $grey;
+	padding:5px 15px;
+	margin-left:5px;
+	border-radius: 5px;
+	background: $yellow_tint;
+	background: -webkit-linear-gradient($yellow_tint , saturate($yellow_tint, 40%), $yellow_tint);
+	background: -o-linear-gradient($yellow_tint, saturate($yellow_tint, 40%), $yellow_tint); 
+	background: -moz-linear-gradient($yellow_tint, saturate($yellow_tint, 40%), $yellow_tint);
+	background: linear-gradient($yellow_tint, saturate($yellow_tint, 40%), $yellow_tint);
+
+}
+
+.btn:hover {
+
+	background: $yellow_tint;
+	background: -webkit-linear-gradient(saturate($yellow_tint, 60%) , $yellow_tint, saturate($yellow_tint, 60%));
+	background: -o-linear-gradient(saturate($yellow_tint, 60%) , $yellow_tint, saturate($yellow_tint, 60%)); 
+	background: -moz-linear-gradient(saturate($yellow_tint, 60%) , $yellow_tint, saturate($yellow_tint, 60%));
+	background: linear-gradient(saturate($yellow_tint, 60%) , $yellow_tint, saturate($yellow_tint, 60%));
+
+}
+
+@media screen and (max-width: 1368px) {
+	
+    .controls {
+
+        width: 80%;
+		margin:0 auto;
+
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+	
+    .controls {
+
+        width: 100%;
+
+    }
+
+}
