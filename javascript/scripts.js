@@ -33,7 +33,7 @@ var Factory = {
 
     Factory.createSearchInput(controlsDiv);
     Factory.createButton(controlsDiv, 'Search', 'Logistics.searchTable(container)');
-    Factory.createButton(controlsDiv, 'Clear', 'Factory.createTable(container, contacts)');
+    Factory.createButton(controlsDiv, 'Clear', 'Logistics.clearSearch(container, contacts)');
 
   },
   createTable: function (container, tableData) {
@@ -129,10 +129,13 @@ var Logistics = {
     div_html += '</tr></table>';
     return div_html;
 
+  },
+  clearSearch: function (container, contacts) {
+
+    document.getElementById('search_input').value = '';
+    Factory.createTable(container, contacts);
+
   }
 
 };
-//4-digit number
-//var str = "" + 540;
-//var pad = "0000";
-//var 4digit = pad.substring(0, pad.length - str.length) + str;
+
